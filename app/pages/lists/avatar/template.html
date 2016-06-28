@@ -1,11 +1,22 @@
 
-<ion-header>
-  <ion-navbar>
-    <ion-title>Avatar List</ion-title>
+<ion-header class="blur">
+  <ion-navbar class="opaque" no-border-bottom>
+    <ion-title>Toy Story</ion-title>
+    <ion-buttons right>
+      <button [navPush]="page4">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
+  <ion-toolbar class="opaque" no-border-top>
+    <ion-segment [(ngModel)]="apps" primary>
+      <ion-segment-button value="all">All</ion-segment-button>
+      <ion-segment-button value="favs">Recent</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content class="list-avatar-page">
+<ion-content class="list-avatar-page" fullscreen>
   <ion-list>
 
     <ion-list-header>Today</ion-list-header>

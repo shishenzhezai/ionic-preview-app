@@ -7,7 +7,8 @@ import * as helpers from './directives/helpers';
 
 // Change the import if you want to change the first page, for example:
 // import { ImagePage as ActionPage } from './pages/cards/cards';
-import { BasicPage as ActionPage} from './pages/action-sheets/action-sheets';
+// import { BasicPage as ActionPage} from './pages/action-sheets/action-sheets';
+import { AvatarPage as ActionPage} from './pages/lists/lists';
 
 @Component({
   templateUrl: './build/app.html',
